@@ -12,18 +12,18 @@ import './styles/styles.scss';
 
 const store = configureStore();
 
- store.dispatch( addExpense({ description: 'Rent', amount: 100 , createdAt: 23432423}));
- store.dispatch( addExpense({ description: 'coffoe', amount: 3 , createdAt: 1}));
- store.dispatch( addExpense({ description: 'Ice-cream', amount: 5 ,createdAt: -100}));
-// const expenseOne = store.dispatch( addExpense({ description: 'Rent', amount: 100 , createdAt: 10000}));
-// const expenseTwo = store.dispatch( addExpense({ description: 'coffoe', amount: 3 , createdAt: 1}));
-// const expenseThree = store.dispatch( addExpense({ description: 'Ice-cream', amount: 5 ,createdAt: -100}));
- //store.dispatch( setTextFilter('cream') );
+//  store.dispatch( addExpense({ description: 'Rent', amount: 100 , createdAt: 23432423}));
+//  store.dispatch( addExpense({ description: 'coffoe', amount: 3 , createdAt: 1}));
+//  store.dispatch( addExpense({ description: 'Ice-cream', amount: 5 ,createdAt: -100}));
+// // const expenseOne = store.dispatch( addExpense({ description: 'Rent', amount: 100 , createdAt: 10000}));
+// // const expenseTwo = store.dispatch( addExpense({ description: 'coffoe', amount: 3 , createdAt: 1}));
+// // const expenseThree = store.dispatch( addExpense({ description: 'Ice-cream', amount: 5 ,createdAt: -100}));
+//  //store.dispatch( setTextFilter('cream') );
 
 
- const state = store.getState();
- const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
- //console.log(visibleExpenses);
+//  const state = store.getState();
+//  const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
+//  //console.log(visibleExpenses);
 
  const jsx = (
     <Provider store={store}>
